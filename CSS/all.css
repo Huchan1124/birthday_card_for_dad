@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(53, 36, 9, 0.89);
+  font-family: Arial, "微軟正黑體",serif;
+  background: white;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap .svg {
+  height: 100vh;
+  position: absolute;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.card {
+  width: 50%;
+}
+
+.card:hover .card-content {
+  transform: rotateY(0.5turn);
+}
+
+.card .card-content {
+  background: white;
+  text-align: center;
+  position: relative;
+  padding: 30%;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.card .card-content .card-front, .card .card-content .card-back {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: -99;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 20%;
+}
+
+.card .card-content .card-front {
+  display: flex;
+  flex-wrap: wrap;
+  background: url("/img/thank-background.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.card .card-content .card-front .card-img {
+  width: 50%;
+  transform: translate3d(0px, 25px, 60px);
+}
+
+.card .card-content .card-front .card-img2 {
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 2px rgba(151, 151, 151, 0.2);
+  filter: saturate(1.2);
+}
+
+.card .card-content .card-back {
+  transform: rotateY(0.5turn);
+  background: url("/img/text-background.png") no-repeat;
+  background-size: contain;
+  backface-visibility: hidden;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.card .card-content .card-back .card-back-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding: 1% 10% 0 10%;
+}
+
+.card .card-content .card-back .card-back-text span {
+  display: block;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.card .card-content .card-back .card-back-img {
+  width: 50%;
+  transform: translate3d(0px, 25px, 50px);
+}
+
+.card .card-content .card-back .card-button-message .button {
+  background: #10b655e3;
+  border-radius: 24px;
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.card .card-content .card-back .card-button-message .button:hover {
+  background: #ff625d;
+}
+
+.card .card-content .card-back .card-button-message .button:active {
+  background: orange;
+}
+/*# sourceMappingURL=all.css.map */
