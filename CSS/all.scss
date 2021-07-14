@@ -53,7 +53,7 @@ body {
          .card-front {
              display: flex;
              flex-wrap: wrap;
-             background: url("/img/thank-background.jpg") no-repeat center;        
+             background: url("../img/thank-background.jpg") no-repeat center;        
              background-size: contain;
                     
             .card-img {
@@ -71,7 +71,7 @@ body {
         .card-back {
             // 轉180度讓文字向背面顯示
             transform: rotateY(.5turn);
-            background: url("/img/text-background.png") no-repeat;
+            background: url("../img/text-background.png") no-repeat;
             background-size: contain;
             backface-visibility: hidden;
             font-weight: bold;

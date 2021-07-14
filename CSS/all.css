@@ -55,7 +55,7 @@ body {
 .card .card-content .card-front {
   display: flex;
   flex-wrap: wrap;
-  background: url("/img/thank-background.jpg") no-repeat center;
+  background: url("../img/thank-background.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -72,7 +72,7 @@ body {
 
 .card .card-content .card-back {
   transform: rotateY(0.5turn);
-  background: url("/img/text-background.png") no-repeat;
+  background: url("../img/text-background.png") no-repeat;
   background-size: contain;
   backface-visibility: hidden;
   font-weight: bold;
